@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://194.67.67.15:3306/crm?
+    username: crmuser
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true

@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:mysql://194.67.67.15:3306/crm_prod?
+    username: crm-admin
+    driver-class-name: com.mysql.cj.jdbc.Driver

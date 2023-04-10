@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: composite
+
+  cloud:
+    config:
+      server:
+        composite:
+          -
+            type: native
+            search-locations: classpath:/config
+          -
+            type: vault
+            host: 127.0.0.1
+            port: 8200
+            backend: secret
+            kvVersion: 2
+
+server:
+  port:
+    8071
