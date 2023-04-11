@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-config-server'
-    implementation "org.springframework.vault:spring-vault-core"
+    implementation group: 'org.springframework.vault', name: 'spring-vault-core', version: '3.0.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
