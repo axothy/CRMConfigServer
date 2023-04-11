@@ -14,7 +14,8 @@ spring:
             search-locations: classpath:/config
           -
             type: vault
-            host: 127.0.0.1
+            host: 95.163.235.242
+            scheme: http
             port: 8200
             backend: secret
             kvVersion: 2
