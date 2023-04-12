@@ -1,0 +1,21 @@
+spring:
+  application:
+    name:
+      scholar-config-server
+  profiles:
+    active: native, vault
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+        vault:
+          host: 95.163.235.242
+          port: 8200
+          backend: secret
+          kv-version: 2
+
+server:
+  port:
+    8071
